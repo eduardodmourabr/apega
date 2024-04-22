@@ -1,0 +1,101 @@
+/* CARROUSSEL */
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.container {
+
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+.img {
+    background-image: url('../../../assets/carroussel-teste.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.carousel {
+    width: 90%;
+    margin: auto;
+    border: 2px solid #ccc;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slider {
+
+    height: 500px;
+    display: flex;
+    width: 400%;
+    transition: all 0.3s;
+
+}
+
+.slider section {
+
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.controls .arrow span {
+    font-size: 60px;
+    color: #fff;
+}
+
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.controls ul {
+
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.controls ul li {
+
+    width: 14px;
+    height: 14px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50px;
+    margin: 10px;
+    background: #e2e2e2;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+
+    background: transparent;
+}
+
+
+@media (max-width: 700px){
+    .carousel {
+        max-width: 100%;
+    }
+}

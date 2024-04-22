@@ -1,0 +1,45 @@
+.leiaut {
+    color: #fff;
+}
+.title{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.corpo-01 {
+    background: #345fa0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.corpo-02 {
+    background: #0f3d81;
+    padding: 30px 0;
+}
+
+.corpo-02 .menu,
+.corpo-02 .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.corpo-02 .menu p ,a{
+    margin: 0 10px;
+    color: #Fff;
+    cursor: pointer;
+    padding: 30px ;
+    text-decoration: none;
+}
+
+.icons{
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.texto p{
+    text-align: center;
+}

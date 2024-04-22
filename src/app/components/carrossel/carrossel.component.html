@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="carousel">
+      <div class="slider">
+        <section><div class="img"></div></section>
+        <section><div class="img"></div></section>
+        <section><div class="img"></div></section>
+        <section><div class="img"></div></section> 
+      </div>
+      <div class="controls">
+        <span class="arrow left" (click)="onLeftArrowClick()">
+          <span class="material-icons">keyboard_arrow_left</span>
+        </span>
+        <span class="arrow right" (click)="onRightArrowClick()">
+          <span class="material-icons">keyboard_arrow_right</span>
+        </span>
+        <ul>
+            <li *ngFor="let _ of [0, 1, 2, 3]; let i = index" (click)="onIndicatorClick(i)" [class.selected]="sectionIndex === i"></li>
+          </ul>
+          
+      </div>
+    </div>
+  </div>
+  

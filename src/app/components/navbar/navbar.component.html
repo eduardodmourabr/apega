@@ -1,0 +1,51 @@
+<div class="body">
+    <nav class="navbar">
+        <div class="container">
+      
+          <div class="navbar-header">
+            <button class="navbar-toggler" (click)="handleSmallScreens()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="img">
+                <img routerLink="/" src="../../../assets/logo-apega.png" alt="">
+            </div>
+          </div>
+      
+          <div class="navbar-menu" [class.active]="dropdownIsOpen">
+            <ul class="navbar-nav">
+              <li class="active"><a routerLink="/sobre-nos">Sobre</a></li>
+              <!-- <li class="navbar-dropdown">
+                <a class="dropdown-toggler" (click)="toggleDropdown($event, 'my-dropdown-id')">Categories <i class="fa fa-angle-down"></i></a><ul class="dropdown" id="my-dropdown-id">
+                  <li><a href="#">Actions</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more separated link.</a></li>
+                </ul>
+              </li>
+              <li class="navbar-dropdown">
+                <a class="dropdown-toggler" (click)="toggleDropdown($event, 'blog')">
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                  <li><a href="#">Some category</a></li>
+                  <li><a href="#">Some another category</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more separated link.</a></li>
+                </ul>
+              </li> -->
+              <li><a routerLink="/gaas">GEAD's</a></li>
+              <li><a routerLink="/faq">FAQ</a></li>
+              <li><a>Agenda</a></li>
+              <li><a>Contatos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+</div>
